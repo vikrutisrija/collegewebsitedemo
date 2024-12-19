@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - PVPSIT</title>
+    <style>
+        /* General styles */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9;
+            overflow-y: scroll;
+            color: #333;
+        }
+
+        /* About Section Header */
+        .about-header {
+            background-color: #595959;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-header h1 {
+            font-size: 60px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-header p {
+            font-size: 24px;
+            margin-top: 15px;
+            font-weight: 300;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* About Content Section */
+        .about-content {
+            padding: 60px 20px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about-content h2 {
+            font-size: 36px;
+            color: #333;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .about-text {
+            max-width: 900px;
+            text-align: center;
+            line-height: 1.7;
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .about-image {
+            width: 100%;
+            max-width: 650px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-image-container {
+            width: 100%;
+            max-width: 650px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 30px;
+            text-align: center;
+            max-width: 350px;
+            width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .about-card h3 {
+            font-size: 24px;
+            color: #2b579a;
+            margin-bottom: 10px;
+        }
+
+        .about-card p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Back Button */
+        .back-button {
+            padding: 12px 25px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 40px;
+        }
+
+        .back-button:hover {
+            background-color: #005bb5;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- About Section Header -->
+    <div class="about-header">
+        <h1>About Us</h1>
+        <p>Learn more about PVPSIT and the team behind the success</p>
+    </div>
+
+    <!-- About Content Section -->
+    <div class="about-content">
+        <h2>Who We Are</h2>
+        <div class="about-text">
+            <p>PVPSIT is a premier institution dedicated to fostering the growth of young minds. Our mission is to provide students with a holistic education that prepares them to thrive in a rapidly changing world. With a diverse team of dedicated educators, we offer an environment that nurtures creativity, innovation, and leadership.</p>
+            <p>We believe in providing a platform that encourages our students to explore new ideas and challenges, empowering them to excel both academically and personally. Our commitment to excellence is reflected in our curriculum, which integrates both theoretical knowledge and practical experience.</p>
+        </div>
+
+        <!-- Image Section -->
+        <div class="about-image-container">
+            <img src="https://img.freepik.com/free-photo/team-work-concept-business-people-collaboration-working-office_1150-27893.jpg" 
+                 alt="About Image" class="about-image">
+        </div>
+
+        <!-- Our Team Section -->
+        <div class="about-team">
+            <h2>Meet Our Team</h2>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                <!-- Team Member 1 -->
+                <div class="about-card">
+                    <img src="https://www.pvpsiddhartha.ac.in/new_images/principal.jpg" 
+                         alt="Team Member 1">
+                    <h3>Dr.Sivaji Babu</h3>
+                    <p>Principla</p>
+                    <p>Shivaji Babu leads the vision and strategy of PVPSIT, ensuring we maintain excellence in education and technology.</p>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="about-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Prasad_V_Potluri.png" 
+                         alt="Team Member 2">
+                    <h3>Dr.Potluri Vara Prasad</h3>
+                    <p>Managing Director</p>
+                    <p>Potluri Vara Prasad ensures the smooth operations of PVPSIT, bringing her expertise in management and strategy.</p>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="about-card">
+                    <img src="https://www.pvpsiddhartha.ac.in/new_images/csehod.jpg" 
+                         alt="Team Member 3">
+                    <h3>Dr. A. Jayalakshmi</h3>
+                    <p>Computer Science and Engineering Head of the Department</p>
+                    <p>Dr. A.Jayalakshmi the R&D department, driving innovation and overseeing the development of new programs.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="window.history.back();">Go Back</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - PVPSIT</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f7f7f7, #e1f2ff);
+        }
+
+        .header {
+            background-image: url('https://img.freepik.com/free-photo/blurred-background-classroom_1150-3839.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 300px 80px;
+            text-align: center;
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+        }
+
+        .header h1 {
+            font-size: 60px;
+            letter-spacing: 2px;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .content {
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            font-size: 38px;
+            color: #333;
+            margin-bottom: 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .academics-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            transition: transform 0.5s ease;
+        }
+
+        .academic-program {
+            position: relative;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease-in-out;
+            height: 350px; /* Fixed height for uniformity */
+        }
+
+        .academic-program img {
+            width: 100%;
+            height: 100%; /* Make the image fill the container */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+            transition: transform 0.4s ease;
+        }
+
+        .academic-program .program-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            border-radius: 15px;
+        }
+
+        .academic-program:hover .program-overlay {
+            opacity: 1;
+        }
+
+        .academic-program:hover img {
+            transform: scale(1.1);
+        }
+
+        .academic-program h3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            z-index: 1;
+            width: 90%;
+        }
+
+        .academic-program p {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+            width: 90%;
+            padding: 0 10px;
+        }
+
+        .back-button {
+            margin-top: 40px;
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #388E3C;
+        }
+
+        /* Hover effect for the grid */
+        .academics-section:hover {
+            transform: scale(1.02);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Academics at PVPSIT</h1>
+    </div>
+
+    <div class="content">
+        <h2>Empowering Minds, Shaping Futures</h2>
+        <div class="academics-section">
+            <!-- Program 1 -->
+            <div class="academic-program">
+                <img src="https://img.freepik.com/free-photo/student-working-laptop-table_1150-12327.jpg" alt="Undergraduate Program">
+                <div class="program-overlay"></div>
+                <h3>Undergraduate Programs</h3>
+                <p>Explore a wide range of undergraduate programs that prepare students for successful careers in various fields of study.</p>
+            </div>
+            <!-- Program 2 -->
+            <div class="academic-program">
+                <img src="https://img.freepik.com/free-photo/modern-classroom-school_1150-10594.jpg" alt="Postgraduate Program">
+                <div class="program-overlay"></div>
+                <h3>Postgraduate Programs</h3>
+                <p>Advance your knowledge with our postgraduate programs designed for professionals and aspiring experts.</p>
+            </div>
+            <!-- Program 3 -->
+            <div class="academic-program">
+                <img src="https://img.freepik.com/free-photo/group-of-business-people_1150-11647.jpg" alt="Research Programs">
+                <div class="program-overlay"></div>
+                <h3>Research Programs</h3>
+                <p>Engage in cutting-edge research to contribute to global knowledge in technology, science, and humanities.</p>
+            </div>
+            <!-- Program 4 -->
+            <div class="academic-program">
+                <img src="https://img.freepik.com/free-photo/teamwork-concept-closeup-photo-laptop-hands-group_1150-19630.jpg" alt="Diploma Programs">
+                <div class="program-overlay"></div>
+                <h3>Diploma Programs</h3>
+                <p>Short-term programs designed to provide industry-relevant skills and knowledge for immediate career opportunities.</p>
+            </div>
+        </div>
+
+        <button class="back-button" onclick="window.history.back();">Go Back</button>
+    </div>
+
+</body>
+</html>
